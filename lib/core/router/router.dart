@@ -1,6 +1,7 @@
 import 'package:go_router/go_router.dart';
-import 'package:matule/home_screen.dart';
-import 'package:matule/root_screen.dart';
+import 'package:matule/layers/presentation/screens/home_screen.dart';
+import 'package:matule/layers/presentation/screens/root_screen.dart';
+import 'package:matule/layers/presentation/screens/signin_screen.dart';
 
 class RouterConfigGo {
   static GoRouter get router => GoRouter(
@@ -14,8 +15,8 @@ class RouterConfigGo {
             routes: [
               GoRoute(
                 path: '/',
-                builder: (context, state) => HomeScreen(),
-                name: 'home',
+                builder: (context, state) => SigninScreen(),
+                name: 'Enterace',
               ),
             ],
           ),
